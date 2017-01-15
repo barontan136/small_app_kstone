@@ -1,11 +1,46 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <view  bindtap="bindViewTap" class="banner">
+    <image class="banner" src="{{userInfo.avatarUrl}}"></image>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-    <text class="user-motto">{{reqdata}}</text>
+
+  <view class="tip">
+    <text class="tip-left">金世通热点</text>
+    <text class="tip-right">|{{userInfo.nickName}}</text>
   </view>
+
+  <view class="ad">
+    <div class="ad-left">
+      <text>280元/g</text>
+      <text> 参照上交所金价</text>
+    </div>
+
+    <div class="ad-right">
+      <text> | 好友分享</text>
+      <text style="margin-left:10px;">{{userInfo.nickName}}</text>
+    </div>
+  </view>
+
+
+  <view class="xsj">
+    <text> 新手金</text>
+  </view>
+
+  <view class="hdj">
+    <text> 活动金</text>
+  </view>
+
+  <view class="hdj">
+    <text> 特价金</text>
+  </view>
+
+
+  <view class="hqj">
+    <text> 活期金</text>
+  </view>
+
+  <view class="friend">
+    <text>粤科金融集团＃金鼎股份公司</text>
+  </view>
+
 </view>

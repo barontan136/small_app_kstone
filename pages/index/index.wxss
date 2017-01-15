@@ -20,3 +20,73 @@
   margin-top: 200px;
   color: red;
 }
+
+.banner {
+width:100%;
+height:380rpx;
+background-color:white;
+}
+
+.tip {
+height:60rpx;
+color: red;
+padding:20rpx 0 0 5rpx;
+background-color:white;
+/*border-bottom-style:solid;
+border-bottom-width:1rpx;
+border-bottom-color:yellow;*/
+}
+.tip-left {
+
+}
+.tip-right {
+margin-left:20rpx;
+}
+
+.ad {
+width:100%;
+height:50px;
+margin-top: 20rpx;
+background-color:white;
+}
+.ad-left {
+  text-align: center;
+  width:50%;
+}
+.ad-right {
+  width: 50%;
+}
+
+.xsj {
+width:100%;
+height:70px;
+margin-top: 20rpx;
+background-color:white;
+}
+
+
+.hdj {
+width:100%;
+height:100px;
+margin-top: 20rpx;
+background-color:white;
+}
+
+
+.hqj {
+width:100%;
+height:70px;
+margin-top: 20rpx;
+background-color:white;
+}
+
+.friend {
+width:100%;
+height:70px;
+margin-top: 20rpx;
+
+}
+
+
+
+

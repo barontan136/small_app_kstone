@@ -30,6 +30,7 @@ App({
     userInfo:null
   },
   func:{
-    req:http.req
+    req:http.req,
+    req_kstone:http.req_kstone
   }
 })
