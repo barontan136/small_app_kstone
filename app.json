@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/tg/tg",
+    "pages/center/center",
+    "pages/sc/sc"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "金世通小程序",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {  
+    "list": [{  
+      "pagePath": "pages/index/index",  
+      "text": "首页" 
+    },{  
+      "pagePath": "pages/tg/tg",  
+      "text": "托管"
+    },{  
+      "pagePath": "pages/sc/sc",
+      "text": "商城" 
+    },{  
+      "pagePath": "pages/center/center",  
+      "text": "金库"
+    }],
+    "borderStyle": "white"  
+    }
+}
