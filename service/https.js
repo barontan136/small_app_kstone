@@ -15,19 +15,31 @@ function req(url,data,cb){
     })
 }
 
-function req_kstone(url,data,cb){
+function req_kstone(url,data_r,cb){
   wx.request({
       url: rootDocment + url,
+      // data: {
+      //   m: 'TgIndex',
+      //   a: 'TgIndex',
+      //   r: 'dddddddfddddd',
+      //   t: 'xxxc',
+      //   v: '3.0.3',
+      //   p: '2',
+      // },
       data: {
-        m: 'AppInit',
-        a: 'getInfo',
-        r: '',
-        t: 'xxxc',
-        v: '3.0.0',
-        p: '2',
+        'm': 'TgIndex',
+        'a': 'TgIndex__',
+        'r': data_r,
+        // 'r': 'dddddddfddddddddddddfddddd',
+        't': 'xxxxc',
+        'v': '3.0.3',
+        'p': '2',
       },
       method: 'post',
-      header: {'Content-Type': 'application/json'},
+      header: {
+        //'Content-Type': 'application/json'
+        'Content-Type': 'application/x-www-form-urlencoded'
+        },
       success: function(res){
         return typeof cb == "function" && cb(res.data)
       },

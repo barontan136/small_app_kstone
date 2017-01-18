@@ -1,6 +1,8 @@
 //index.js
 //获取应用实例
-var app = getApp()
+var utils = require('../../utils/util');
+var app = getApp();
+var encStr;
 Page({
   data: {
     motto: 'Hello Small Application',
@@ -15,14 +17,31 @@ Page({
     })
   },
 
+  //点击加密
+  click1:function(e){
+    encStr = utils.Encrypt("Tom");
+    console.log("加密后的结果为===",encStr);
+  },
+  //点击解密
+  clickupdate:function(e){
+    //var str = utils.Decrypt(encStr);
+    var str = utils.Decrypt('ZhKZFxlxTbU=');
+    console.log("解密后的信息为为==",str);
+  },
+
   onLoad: function () {
     console.log('onLoad')
-    var that = this
+    var that = this;
 
-    app.func.req_kstone('',{},function(res){  
+    var datatemp = {device_id:'1212', version:'3.0.3'};
+    //datatemp = JSON.parse(datatemp);
+    var dataencrpy = utils.Encrypt(datatemp);
+    app.func.req_kstone('',dataencrpy,function(res){  
+     var str = utils.Decrypt(res);
+    console.log("解密后的信息为为==",str);
      //更新数据
       that.setData({
-        reqdata:res
+        reqdata:str
       })  
     }),
 

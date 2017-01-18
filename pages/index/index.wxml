@@ -24,6 +24,12 @@
 
   <view class="xsj">
     <text> 新手金</text>
+    <button type="default" bindtap="click1" class="update">
+    加密
+  </button>
+  <button type="default" bindtap="clickupdate" class="update">
+    解密
+  </button>
   </view>
 
   <view class="hdj">
