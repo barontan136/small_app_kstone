@@ -33,8 +33,11 @@ Page({
     console.log('onLoad')
     var that = this;
 
-    var datatemp = {device_id:'1212', version:'3.0.3'};
-    //datatemp = JSON.parse(datatemp);
+var str = utils.Decrypt("ButM/i7pufEcCQGFa+97RgdNGOUu6asmrEvRzZ6hcfw=");
+var str = utils.Decrypt("QtGhUI7Ufkrbj7oqxym2PxCKN155UZP+nu8ZF8qLy5Q=");
+
+    var datatemp = "{\"device_id\":\"868013023411808\"}";
+    // datatemp = JSON.parse(datatemp);
     var dataencrpy = utils.Encrypt(datatemp);
     app.func.req_kstone('',dataencrpy,function(res){  
      var str = utils.Decrypt(res);
