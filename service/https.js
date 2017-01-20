@@ -1,5 +1,5 @@
-//var rootDocment = 'https://cssrv.51kingstone.com';//你的域名
-var rootDocment = 'https://tg.51kingstone.com';
+var rootDocment = 'https://cssrv.51kingstone.com:444';//你的域名
+//var rootDocment = 'https://tg.51kingstone.com';
 function req(url,data,cb){
     wx.request({
       url: rootDocment + url,
@@ -27,10 +27,10 @@ function req_kstone(url,data_r,cb){
       //   'p': '2',
       // },      
       data: {
-        'm': 'Coffers',
-        'a': 'coffersIndex',
-        'r': 'fBvxXbTSSZv6NxTXvST0O0mbxdEx6BjCMOQzzACJL/MsF0Y1EpZjVGX5mvrswDNT6r495/o4ZJbUMNYZ1JClIZBIYpFdO8xxjqeoYMhYcBU+l6dSevIUJ66NNvqoZQw0DghIwRNF3M/RRwRbxANoZq2lM4L2VnoU',
-        't': 'T170118215729587f7449c8d90',
+        'm': 'DepositDeal',
+        'a': 'getGoldPrice',
+        'r': 'ButM/i7pufEcCQGFa+97RjvOlGGprbRv0yhZlfmmKcI=\n',
+        't': 'T1701191500275880640b6f777',
         'v': '3.0.2',
         'p': '1',
       },
